@@ -7,7 +7,7 @@ st.title("Monte Carlo Stock Price Simulator")
 
 # 1. Setup
 ticker = st.text_input(
-    "Enter Stock Ticker Symbol (e.g., AAPL):", "AAPL").upper()
+    "Enter Stock Ticker Symbol (e.g., AAPL use Ticker.NS for NSE and Ticker.BO for BSE):", "AAPL").upper()
 
 if st.button("Run Simulation"):
     try:
@@ -70,3 +70,4 @@ if st.button("Run Simulation"):
 
     except Exception as e:
         st.error(f"Error: {e}")
+
